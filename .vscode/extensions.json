@@ -1,0 +1,33 @@
+{
+  // 对应的vscode 推荐的插件
+  "recommendations": [
+    // 强大的针对vue的插件，但是其功能非常强大比如 class中的样式 被引用了几次等，props的类型检测等
+    "Vue.volar",
+    // 针对于vue的ts插件
+    "Vue.vscode-typescript-vue-plugin",
+    // 路径自动补全插件
+    "christian-kohler.path-intellisense",
+    //Vscode 中的图标插件，可以控制vsCode中的文件管理的树目录显示图标
+    "vscode-icons-team.vscode-icons",
+    // markdownlint 插件
+    "davidanson.vscode-markdownlint",
+    // 写html标签的时候可以重命名标签名的,但是现在vscode已经内置了，就不需要再下载这个插件了。只不过默认是关闭的，需要开启。点击设置，搜索link，把这个勾选上，就可以左右重命名标签了, Linked Editing
+    "formulahendry.auto-rename-tag",
+    // 安装好插件 stylelint之后，在setting.json配置自动修复,source.fixAll.stylelint: true,按 ctrl + s保存时自动修复不合理的css格式
+    "stylelint.vscode-stylelint",
+    //Tailwind 提供建议，减少错误并提高代码质量
+    "bradlc.vscode-tailwindcss",
+    // eslint
+    "dbaeumer.vscode-eslint",
+    // prettier
+    "esbenp.prettier-vscode",
+    // postcss
+    "csstools.postcss",
+    // 统一管理各个环境下的全局变量 方便切换环境
+    "mikestead.dotenv",
+    // git工具
+    "eamodio.gitlens",
+    // class 显示为图标的样子
+    "antfu.iconify"
+  ]
+}
