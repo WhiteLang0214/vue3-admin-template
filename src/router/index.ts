@@ -16,5 +16,4 @@ const router = createRouter({
   scrollBehavior: () => ({ left: 0, top: 0 }),
 });
 
-// 配置路由表
-export const setupRouter = (app: App<Element>) => app.use(router);
+export default (app: App<Element>) => app.use(router);

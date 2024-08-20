@@ -9,7 +9,6 @@
     "allowSyntheticDefaultImports": true,
     "strictFunctionTypes": false,
     "jsx": "preserve",
-    "baseUrl": ".",
     "allowJs": true,
     "sourceMap": true,
     "esModuleInterop": true,
@@ -20,10 +19,12 @@
     "lib": ["dom", "esnext"],
     "noImplicitAny": false,
     "skipLibCheck": true,
-    "types": ["vite/client"],
+    "types": ["vite/client", "element-plus/global"],
     "removeComments": true,
+    "baseUrl": ".",
     "paths": {
-      "/@/*": ["src/*"],
+      // 解决ts不识别@别名问题
+      "@/*": ["src/*"],
       "/#/*": ["types/*"]
     }
   },
