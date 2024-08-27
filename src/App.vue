@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import LaConfigProvider from "@/components/LaConfigProvider/index.vue";
+import HtoTable from "@/views/test/handsontable.vue";
 </script>
 
 <template>
   <la-config-provider>
+    <HtoTable />
     <el-button type="primary" plain>按钮</el-button>
     <el-table mb-1 :data="[]" />
     <span class="m-1">m-1</span><span>m-2</span>

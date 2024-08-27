@@ -10,6 +10,7 @@ declare module 'vue' {
     ElButton: typeof import('element-plus/es')['ElButton']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     ElTable: typeof import('element-plus/es')['ElTable']
+    Handsontable: typeof import('./src/components/LaTable/handsontable.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     LaConfigProvider: typeof import('./src/components/LaConfigProvider/index.vue')['default']
     MyGrid: typeof import('./src/components/MyGrid.vue')['default']

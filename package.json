@@ -9,10 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@handsontable/vue3": "^14.5.0",
     "axios": "^1.7.4",
     "dayjs": "^1.11.12",
     "echarts": "^5.5.1",
     "element-plus": "^2.8.0",
+    "handsontable": "^14.5.0",
+    "install": "^0.13.0",
     "mitt": "^3.0.1",
     "pinia": "^2.2.2",
     "sortablejs": "^1.15.2",
