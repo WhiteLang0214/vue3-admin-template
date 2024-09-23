@@ -22,7 +22,9 @@
     "three": "^0.167.1",
     "vue": "^3.4.35",
     "vue-router": "^4.4.3",
-    "vxe-table": "^4.6.18"
+    "vxe-pc-ui": "^4.1.28",
+    "vxe-table": "^4.7.79",
+    "xe-utils": "^3.5.30"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",

@@ -5,7 +5,8 @@ import App from "./App.vue";
 import installRouter from "@/router";
 import installStore from "@/store";
 import installDirectives from "@/directives";
-import installElementPlus from "@/plugins/elementPlus";
+import installPlugins from "@/plugins";
+import registerRenderer from "@/components/LaVxeTable/renderer/index";
 
 import "virtual:uno.css";
 
@@ -20,7 +21,9 @@ async function start() {
   // 注册全局指令
   installDirectives(app);
   // 注册组件
-  installElementPlus(app);
+  installPlugins(app);
+
+  registerRenderer();
 
   app.mount("#app");
 }
