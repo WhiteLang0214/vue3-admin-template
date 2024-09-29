@@ -6,7 +6,6 @@ import installRouter from "@/router";
 import installStore from "@/store";
 import installDirectives from "@/directives";
 import installPlugins from "@/plugins";
-import registerRenderer from "@/components/LaVxeTable/renderer/index";
 
 import "virtual:uno.css";
 
@@ -22,8 +21,6 @@ async function start() {
   installDirectives(app);
   // 注册组件
   installPlugins(app);
-
-  registerRenderer();
 
   app.mount("#app");
 }

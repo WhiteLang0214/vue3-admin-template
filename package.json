@@ -9,13 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@handsontable/vue3": "^14.5.0",
     "axios": "^1.7.4",
     "dayjs": "^1.11.12",
     "echarts": "^5.5.1",
     "element-plus": "^2.8.0",
-    "handsontable": "^14.5.0",
+    "exceljs": "^4.4.0",
     "install": "^0.13.0",
+    "jspdf": "^2.5.2",
     "mitt": "^3.0.1",
     "pinia": "^2.2.2",
     "sortablejs": "^1.15.2",
@@ -23,7 +23,10 @@
     "vue": "^3.4.35",
     "vue-router": "^4.4.3",
     "vxe-pc-ui": "^4.1.28",
-    "vxe-table": "^4.7.79",
+    "vxe-table": "^4.7.81",
+    "vxe-table-plugin-export-pdf": "^4.0.2",
+    "vxe-table-plugin-export-xlsx": "^4.0.2",
+    "vxe-table-plugin-renderer": "^4.0.1",
     "xe-utils": "^3.5.30"
   },
   "devDependencies": {

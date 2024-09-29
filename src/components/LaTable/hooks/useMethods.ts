@@ -4,27 +4,43 @@ import type { VxeGridInstance, VxeColumnPropTypes } from "vxe-table";
 export const useChangeColumnWidth = (
   gridRef: VxeGridInstance,
   columnName: string,
-  width: number
+  width: number,
 ) => {
   gridRef && gridRef.setColumnWidth(columnName, width);
 };
 
+const meanNum = (list: any[], field: string) => {
+  let count = 0;
+  list.forEach((item) => {
+    count += Number(item[field]);
+  });
+  return (count / list.length).toFixed(2);
+};
+
+const sumNum = (list: any[], field: string) => {
+  let count = 0;
+  list.forEach((item) => {
+    count += Number(item[field]);
+  });
+  return count.toFixed(2);
+};
+
 // 尾部方法
-export const useFooterMethod = ({ columns }) => {
+export const useFooterMethod = ({ columns, data }) => {
   // 尾部合计
   const footerData = [
     columns.map((column, columnIndex) => {
       if (columnIndex === 0) {
         return "合计";
       }
-      if (["date"].includes(column.field)) {
-        return "2020-09-05";
+      if (["age"].includes(column.field)) {
+        return meanNum(data, column.field) + "岁";
       }
       if (["rate"].includes(column.field)) {
-        return 999.8;
+        return sumNum(data, column.field);
       }
       return null;
-    })
+    }),
   ];
   return footerData;
 };
@@ -33,7 +49,7 @@ export const useFooterMethod = ({ columns }) => {
 export const useToggleFixedColumn = (
   gridRef: VxeGridInstance,
   field: VxeColumnPropTypes.Field,
-  type: VxeColumnPropTypes.Fixed
+  type: VxeColumnPropTypes.Fixed,
 ) => {
   const $grid = gridRef;
   if ($grid) {

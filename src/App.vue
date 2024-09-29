@@ -1,30 +1,17 @@
 <script setup lang="ts">
 import LaConfigProvider from "@/components/LaConfigProvider/index.vue";
-// import HtoTable from "@/views/test/handsontable.vue";
-import LaVxeTable from "@/views/test/vxeTable.vue";
+import LaTable from "@/views/test/vxeTable.vue";
 </script>
 
 <template>
   <la-config-provider>
-    <LaVxeTable style="width: 100%" />
+    <!-- <LaTable style="width: 100%" /> -->
     <!-- <el-button type="primary" plain>按钮</el-button>
     <el-table mb-1 :data="[]" />
     <span class="m-1">m-1</span><span>m-2</span>
     <i class="mdi:account-cancel-outline" /> -->
+    <RouterView />
   </la-config-provider>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>
