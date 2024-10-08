@@ -120,6 +120,7 @@ let gridOptions = reactive<
     menuConfig: VxeTablePropTypes.MenuConfig<RowVO>;
   }
 >({
+  border: true,
   ...useRowConfig(),
   ...useRadioConfig("name"),
   ...useLoadingConfig(),

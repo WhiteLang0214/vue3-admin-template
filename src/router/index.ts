@@ -2,7 +2,7 @@ import type { RouteRecordRaw } from "vue-router";
 import type { App } from "vue";
 import { createMemoryHistory, createRouter } from "vue-router";
 import { basicRoutes } from "./routes";
-
+console.log("basicRoute:", basicRoutes);
 const publicPath = import.meta.env.VITE_PUBLIC_PATH;
 
 // 创建路由实例
@@ -31,6 +31,7 @@ const router = createRouter({
 // 全局导航守卫
 router.beforeEach(async (to, from) => {
   // 检查用户是否已登录
+  return true;
 });
 
 // 全局导航故障

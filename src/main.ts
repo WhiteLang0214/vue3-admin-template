@@ -9,7 +9,6 @@ import installPlugins from "@/plugins";
 
 import "virtual:uno.css";
 
-// createApp(App).use(VxeUITable).use(pinia).mount("#app");
 async function start() {
   const app = createApp(App);
 

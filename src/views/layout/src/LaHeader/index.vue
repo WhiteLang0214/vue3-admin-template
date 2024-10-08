@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    <el-header>Header</el-header>
-  </div>
+  <el-header height="50px" class="flex items-center bg-white pl-0"
+    >Header</el-header
+  >
 </template>
 
 <style scoped lang="scss"></style>

@@ -35,14 +35,12 @@ export const columns: any = [
   {
     field: "age",
     title: "年龄",
-    width: 150,
     sortable: true,
     editRender: { name: "VxeInput", props: { type: "integer" } },
   },
   {
     field: "sex",
     title: "性别",
-    width: 350,
     titlePrefix: { content: "筛选性别" },
     filterMultiple: false, // 开启筛选
     filters: [
@@ -68,12 +66,12 @@ export const columns: any = [
       content: "自定义前缀图标",
       icon: "vxe-icon-question-circle-fill",
     },
-    width: 350,
+    align: "center",
+    showOverflow: true,
   },
   {
     field: "num",
     title: "num",
-    width: 350,
     // footerFormatter({ itemValue }) {
     //   return `￥${itemValue}元`; // 格式化表尾内容
     // },
@@ -82,7 +80,6 @@ export const columns: any = [
     field: "date",
     title: "Date",
     titleSuffix: { content: "自定义后缀" },
-    width: 350,
     formatter: ["formatDate", "yyyy-MM-dd HH:mm:ss"],
     filters: [{ data: "" }],
     filterRender: dateFilterRender,
@@ -94,9 +91,8 @@ export const columns: any = [
       content: "自定义后缀图标",
       icon: "vxe-icon-question-circle-fill",
     },
-    width: 350,
   },
-  { field: "address", title: "Address", width: 350, showOverflow: "tooltip" }, // 内容溢出时显示为省略号并用 tooltip 显示
+  { field: "address", title: "Address", showOverflow: "tooltip" }, // 内容溢出时显示为省略号并用 tooltip 显示
   {
     type: "html",
     field: "content",
@@ -111,7 +107,7 @@ export const gridData: any = [
   {
     id: 24200,
     name: "Test1",
-    role: "前端",
+    role: "前端省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～省略号～～～",
     date: "2022-10-24T08:14:18.000Z",
     rate: 5,
     address: "address1",
